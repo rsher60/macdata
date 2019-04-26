@@ -1,0 +1,82 @@
+<h1>Decentralised Data as a Service</h1>
+Welcome to Ddas : A decentralised and 
+<section class="insert">
+    <h3>Insert Data</h3>
+    <form action="/insert" method="post">
+        <div class="input">
+            <label for="Area">Area</label>
+            <input type="text" id="Area" name="Area">
+        </div>
+        <div class="input">
+            <label for="content">content</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+
+
+<section class="get">
+    <h3>Available Data Streams</h3>
+    <a href="/get-data">Refresh DATA Streams</a>
+    <a href="">Refresh DATA Streams</a>
+    <!--
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>VA_ratio: {{ this.va_ratio}}</div>
+                <div>UUID_PART: {{ this.UUID_part }}</div>
+                <div>AREA: {{ this.area}}</div>
+                <div>VOLUME: {{ this.volume}}</div>
+                
+            </article>
+        {{/each}}
+    </div>
+    -->
+    <table style="width:100%">
+  <tr>
+    <th>VA_ratio</th>
+    <th>UUID_PART</th> 
+    <th>AREA</th>
+    <th>VOLUME</th>
+  </tr>
+  <tr>
+    <td>{{ this.va_ratio}}</td>
+    <td>{{ this.UUID_part }}</td> 
+    <td>{{ this.area}}</td>
+    <td>{{ this.volume}}</td>
+  </tr>
+  
+</table>
+</section>
+
+
+<!--
+<section class="update">
+    <h3>Update Data</h3>
+    <form action="/update" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label for="Area/Zone">Area/Zone</label>
+            <input type="text" id="Area/Zone" name="Area/Zone">
+        </div>
+        <div class="input">
+            <label for="content">Content</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">UPDATE</button>
+    </form>
+</section>
+-->
+</section>

@@ -1,0 +1,52 @@
+<div>
+  <table style="float: left" >
+    <tr>
+      <th>Part Image</th>
+      <th>Assembly Image</th>
+    </tr>
+    <tr>
+      <td> <img src='http://localhost:8000/images/4a8adccb-934f-4dd0-b5af-be7435129a42.jpg' alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+      <td> <img src='http://localhost:8000/images/815cb4ae-45de-48cc-9778-e92b4fc0eb85.jpg' alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+    </tr>
+    <tr>
+      <td><img src='http://localhost:8000/images/ba8e5949-3adf-4770-8f08-cab81ab04dbd.jpg' alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+      <td> <img src='http://localhost:8000/images/815cb4ae-45de-48cc-9778-e92b4fc0eb85.jpg' alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+    </tr>
+    <tr>
+      <td><img src='http://localhost:8000/images/795b5e2a-6ca3-453a-9224-233bf0a085c4 (1).jpg' alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+      <td> <img src='http://localhost:8000/images/815cb4ae-45de-48cc-9778-e92b4fc0eb85.jpg' border="5"alt="HTML tutorial" style="width:100px;height:100px;border:0;"></td>
+    </tr>
+
+  </table>
+  <table style="float: left" >
+    <tr>
+    
+    <th>UUID_PART</th> 
+    <th>VA_Ratio</th>
+    
+    <th>VOLUME</th>
+    <th>X_DIMS</th>
+    <th>Y_DIMS</th>
+    <th>Z_DIMS</th>
+    
+    
+  </tr>
+  <tr>
+      {{# each items}}
+      
+    <td height=100>{{ this.UUID_part }}</td> 
+    <td>{{this.va_ratio}}</td>
+    
+    <td>{{ this.volume}}</td>
+    <td>{{ this.x_dim}}</td>
+    <td>{{ this.y_dim}}</td>
+    <td>{{ this.z_dim}}</td>
+    
+    
+  </tr>
+  {{/each}}
+    
+    
+  </table>
+</div>
+
